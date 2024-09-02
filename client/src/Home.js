@@ -58,7 +58,7 @@ const Home = () => {
 
     return (
         <div className='content'>
-            <h2>Welcome back, {username}</h2>
+            <h2 className='welcome'>Welcome back, {username}</h2>
             
             <div className='homeBanner'>
                 <img src={bannerImg} alt="banner"></img>
