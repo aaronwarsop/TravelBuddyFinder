@@ -10,7 +10,7 @@ const ProposeTrip = () => {
     const [duration, setDuration] = useState("");
     const [weather, setWeather] = useState("");
     const username = localStorage.getItem("name");
-    const weatherAPIKey = "e9dcac95a79c41bcb0b10944240701";
+    const weatherAPIKey = "e9522cc09ce444238ff202255240209";
 
     // calls on page load and when location and date are both inputted
     useEffect(() => {

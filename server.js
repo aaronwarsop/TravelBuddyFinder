@@ -19,7 +19,7 @@ const Trip = require("./models/tripModel");
 const randomOrgAPIKey = "98abdc56-e679-4f8f-9667-5c2abfe4d401";
 
 // WEATHER API
-const weatherAPIKey = "e9dcac95a79c41bcb0b10944240701";
+const weatherAPIKey = "e9522cc09ce444238ff202255240209";
 
 app.get("/login", cors(), (req, res) => {
     
@@ -135,7 +135,9 @@ app.post("/proposetrip", async(req, res) => {
                 };
             } catch (error) {
                 console.error("Error whilst fetching weather data:", error);
-                throw error;
+                return {
+                    error: "Faled to fetch weather data. Please try again."
+                }
             }
         }
 
