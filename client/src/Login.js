@@ -41,6 +41,9 @@ const Login = () => {
     return (
         <>
             <div className='content'>
+                <div className='home-login-btn'>
+                    <h1 className=""><Link to ="/" className='home-link'>Home</Link></h1>
+                </div>
                 <div className='loginPage'>
                     <h1>Login</h1>
             
